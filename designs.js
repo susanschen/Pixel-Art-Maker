@@ -1,4 +1,6 @@
 // Select color input
+let color = document.getElementById("colorPicker");
+console.log(color.value);
 
 // Select size input
 let height = document.getElementById("input_height");
