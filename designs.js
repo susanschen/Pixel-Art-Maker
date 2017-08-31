@@ -30,12 +30,15 @@ function makeGrid() {
         // create tr
         let tr = document.createElement("tr");
         console.log (tr);
+        // append to canvas
+        canvas.appendChild(tr);
         for (let c=0; c<width.value; c++){
             console.log(`row ${r} column ${c}`);
             // create td
             let td = document.createElement("td");
             console.log(td);
-            // append to document
+            // append to tr
+            tr.appendChild(td);
         }
     }
 }
