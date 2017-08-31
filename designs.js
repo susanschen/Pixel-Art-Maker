@@ -44,3 +44,10 @@ function clearGrid(){
          canvas.removeChild(canvas.firstChild);
     }
 }
+
+// Fill a square with the selected color
+function fillSquare(){
+    // Add eventlistener to each td
+    // Set background color
+    // Append to td
+}
