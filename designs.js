@@ -20,6 +20,6 @@ sizePicker.onsubmit = function(event){
     makeGrid();
 }
 
-function makeGrid(e) {
+function makeGrid() {
     console.log("grid");
 }
