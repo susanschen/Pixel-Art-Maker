@@ -37,6 +37,7 @@ function makeGrid() {
             // append to tr
             tr.appendChild(td);
             // Add eventlistener to each td
+            td.addEventListener("click", fillSquare);
         }
     }
 }
@@ -50,6 +51,7 @@ function clearGrid(){
 
 // Fill a square with the selected color
 function fillSquare(){
+    console.log("filling square..");
     // Set background color
     // Append to td
 }
