@@ -1,14 +1,14 @@
 // Select inputs
-let color = document.getElementById("colorPicker");
-console.log(color.value);
+let canvas = document.getElementById("pixel_canvas");
+console.log(canvas);
 let height = document.getElementById("input_height");
 console.log(height.value);
 let width = document.getElementById("input_width");
 console.log(width.value);
-let canvas = document.getElementById("pixel_canvas");
-console.log(canvas);
 let sizePicker = document.getElementById("sizePicker");
 console.log(sizePicker);
+let color = document.getElementById("colorPicker");
+console.log(color.value);
 
 color.addEventListener("click", function(){console.log("color clicked");});
 
@@ -36,6 +36,7 @@ function makeGrid() {
             console.log(td);
             // append to tr
             tr.appendChild(td);
+            // Add eventlistener to each td
         }
     }
 }
@@ -49,7 +50,6 @@ function clearGrid(){
 
 // Fill a square with the selected color
 function fillSquare(){
-    // Add eventlistener to each td
     // Set background color
     // Append to td
 }
