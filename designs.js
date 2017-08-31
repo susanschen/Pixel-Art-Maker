@@ -22,4 +22,12 @@ sizePicker.onsubmit = function(event){
 
 function makeGrid() {
     console.log("grid");
+    for (let r=0; r<height.value; r++){
+        // create tr
+        for (let c=0; c<width.value; c++){
+            console.log(`row ${r} column ${c}`);
+            // create td
+            // append to document
+        }
+    }
 }
