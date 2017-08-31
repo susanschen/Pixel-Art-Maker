@@ -24,9 +24,13 @@ function makeGrid() {
     console.log("grid");
     for (let r=0; r<height.value; r++){
         // create tr
+        let tr = document.createElement("tr");
+        console.log (tr);
         for (let c=0; c<width.value; c++){
             console.log(`row ${r} column ${c}`);
             // create td
+            let td = document.createElement("td");
+            console.log(td);
             // append to document
         }
     }
