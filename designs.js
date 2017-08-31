@@ -21,6 +21,7 @@ console.log(sizePicker);
 sizePicker.onsubmit = function(event){
     event.preventDefault();
     console.log("submit");
+    clearGrid();
     makeGrid();
 }
 
@@ -40,5 +41,12 @@ function makeGrid() {
             // append to tr
             tr.appendChild(td);
         }
+    }
+}
+
+// https://stackoverflow.com/questions/3955229/remove-all-child-elements-of-a-dom-node-in-javascript
+function clearGrid(){
+    while (canvas.firstChild){
+         canvas.removeChild(canvas.firstChild);
     }
 }
