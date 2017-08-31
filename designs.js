@@ -10,6 +10,8 @@ console.log(canvas);
 let sizePicker = document.getElementById("sizePicker");
 console.log(sizePicker);
 
+color.addEventListener("click", function(){console.log("color clicked");});
+
 // When size is submitted by the user, call makeGrid()
 // http://mycodingtricks.com/javascript/submit-form-using-javascript-ajax/
 sizePicker.onsubmit = function(event){
