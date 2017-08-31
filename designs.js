@@ -9,13 +9,17 @@ let width = document.getElementById("input_width");
 console.log(width.value);
 
 // When size is submitted by the user, call makeGrid()
-let submitType = document.getElementsByTagName("input")[2];
-console.log(submitType);
-submitType.addEventListener("click", makeGrid);
+let sizePicker = document.getElementById("sizePicker");
+console.log(sizePicker);
 
-function makeGrid() {
+// Submit form using javascript
+// http://mycodingtricks.com/javascript/submit-form-using-javascript-ajax/
+sizePicker.onsubmit = function(event){
+    event.preventDefault();
+    console.log("submit");
+    makeGrid();
+}
 
-// Your code goes here!
+function makeGrid(e) {
     console.log("grid");
-
 }
