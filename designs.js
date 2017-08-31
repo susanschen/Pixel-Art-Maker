@@ -1,22 +1,16 @@
-// Select color input
+// Select inputs
 let color = document.getElementById("colorPicker");
 console.log(color.value);
-
-// Select size input
 let height = document.getElementById("input_height");
 console.log(height.value);
 let width = document.getElementById("input_width");
 console.log(width.value);
-
-// Select canvas
 let canvas = document.getElementById("pixel_canvas");
 console.log(canvas);
-
-// When size is submitted by the user, call makeGrid()
 let sizePicker = document.getElementById("sizePicker");
 console.log(sizePicker);
 
-// Submit form using javascript
+// When size is submitted by the user, call makeGrid()
 // http://mycodingtricks.com/javascript/submit-form-using-javascript-ajax/
 sizePicker.onsubmit = function(event){
     event.preventDefault();
