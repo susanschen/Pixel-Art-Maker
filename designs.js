@@ -8,6 +8,10 @@ console.log(height.value);
 let width = document.getElementById("input_width");
 console.log(width.value);
 
+// Select canvas
+let canvas = document.getElementById("pixel_canvas");
+console.log(canvas);
+
 // When size is submitted by the user, call makeGrid()
 let sizePicker = document.getElementById("sizePicker");
 console.log(sizePicker);
