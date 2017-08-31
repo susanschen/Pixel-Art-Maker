@@ -51,7 +51,8 @@ function clearGrid(){
 
 // Fill a square with the selected color
 function fillSquare(){
-    console.log("filling square..");
+    console.log(`filling square with ${color.value}`);
     // Set background color
+    this.setAttribute("style", `background-color: ${color.value}`);
     // Append to td
 }
