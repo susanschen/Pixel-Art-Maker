@@ -23,12 +23,19 @@ function makeGrid() {
         }
     }
 }
+// alternative code:
+// const row = canvas.insertRow(i);
+// const cell = row.insertCell(j);
 
 function clearGrid(){
     while (canvas.firstChild){
          canvas.removeChild(canvas.firstChild);
     }
 }
+// alternative code:
+// while (table.rows.length > 0) {
+//  table.deleteRow(0);
+// }
 
 function fillSquare(){
     this.setAttribute("style", `background-color: ${color.value}`);
