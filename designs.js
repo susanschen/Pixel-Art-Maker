@@ -1,3 +1,5 @@
+/* jshint esnext: true */
+/* global document */
 let canvas = document.getElementById("pixel_canvas");
 let height = document.getElementById("input_height");
 let width = document.getElementById("input_width");
@@ -14,18 +16,13 @@ sizePicker.onsubmit = function(event){
 
 function makeGrid() {
     for (let r=0; r<height.value; r++){
-        let tr = document.createElement("tr");
-        canvas.appendChild(tr);
+        const row = canvas.insertRow(r);
         for (let c=0; c<width.value; c++){
-            let td = document.createElement("td");
-            tr.appendChild(td);
-            td.addEventListener("click", fillSquare);
+            const cell = row.insertCell(c);
+            cell.addEventListener("click", fillSquare);
         }
     }
 }
-// alternative code:
-// const row = canvas.insertRow(i);
-// const cell = row.insertCell(j);
 
 function clearGrid(){
     while (canvas.firstChild){
@@ -37,6 +34,6 @@ function clearGrid(){
 //  table.deleteRow(0);
 // }
 
-function fillSquare(){
+function fillSquare () {
     this.setAttribute("style", `background-color: ${color.value}`);
 }

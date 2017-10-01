@@ -1,38 +1,66 @@
 body {
-    text-align: center;
+  text-align: center;
 }
 
-h1 {
-    font-family: 'Audiowide', sans-serif;
-    font-size: 2rem;
-    margin: 0.2em;
+.mainTitle {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 2rem;
+  margin: 0.2em;
+  color: #c88;
 }
 
-h2 {
-    margin: 1em 0 0.25em;
-}
-
-h2:first-of-type {
-    margin-top: 0.5em;
+.chooseTitle {
+  margin: 1em 0 0.25em;
 }
 
 table, tr, td {
-    border: 1px solid black;
+  border: 1px solid #abc;
 }
 
 table {
-    border-collapse: collapse;
-    margin: 0 auto;
+  border-collapse: collapse;
+  margin: 40px auto;
 }
 
 tr {
-    height: 20px;
+  height: 25px;
 }
 
 td {
-    width: 20px;
+  width: 25px;
 }
 
 input[type=number] {
-    width: 6em;
+  width: 3em;
+  margin-right: 10px;
+}
+
+input[type=submit] {
+  margin-right: 2em;
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .mainTitle {
+    font-size: 1.1rem;
+    display: inline;
+  }
+
+  .chooseTitle {
+    font-size: 1.1rem;
+    display: inline;
+  }
+
+  table {
+    margin: 10px auto;
+  }
+
+    tr {
+    height: 30px;
+  }
+
+  td {
+    width: 30px;
+  }
 }
