@@ -1,8 +1,8 @@
 /* jshint esnext: true */
 /* global document */
 let canvas = document.getElementById("pixel_canvas");
-let height = document.getElementById("input_height");
-let width = document.getElementById("input_width");
+let height = 11;
+let width = 20;
 let sizePicker = document.getElementById("sizePicker");
 let color = document.getElementById("colorPicker");
 
