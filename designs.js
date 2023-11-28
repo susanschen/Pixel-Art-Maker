@@ -4,9 +4,6 @@ let canvas = document.getElementById("pixel_canvas");
 let height = 11;
 let width = 20;
 let sizePicker = document.getElementById("go");
-let color = document.getElementById("colorPicker");
-
-color.addEventListener("click", function(){});
 sizePicker.addEventListener("click", go);
 /*sizePicker.onsubmit = function(event){
     event.preventDefault();
